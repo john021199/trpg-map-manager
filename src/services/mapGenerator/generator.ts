@@ -17,9 +17,9 @@ import {
  * Generate random position for a node
  */
 function getRandomPosition(existingLocations: Location[]): { x: number; y: number } {
-  const minDistance = 180; // Increased for better spacing
+  const minDistance = 120; // Reduced for more compact layout
   const maxAttempts = 150;
-  const bounds = { minX: 100, maxX: 1400, minY: 100, maxY: 900 }; // Expanded bounds
+  const bounds = { minX: 50, maxX: 900, minY: 50, maxY: 600 }; // More compact bounds
 
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
     const x = Math.random() * (bounds.maxX - bounds.minX) + bounds.minX;
