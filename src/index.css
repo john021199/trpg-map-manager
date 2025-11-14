@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* React Flow custom styles */
+.react-flow__node {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.react-flow__node.core-node {
+  background-color: #3b82f6;
+  color: white;
+  border: 2px solid #1d4ed8;
+}
+
+.react-flow__node.outer-node {
+  background-color: #8b5cf6;
+  color: white;
+  border: 2px solid #6d28d9;
+}
+
+.react-flow__edge {
+  stroke: #9ca3af;
+}
